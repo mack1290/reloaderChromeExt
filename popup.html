@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Welcome to Automatic Reloading</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .button {
+          background-color: #4CAF50; /* Green */
+          border: none;
+          color: white;
+          text-align: center;
+          text-decoration: none;
+          display: inline-block;
+          cursor: pointer;
+        }
+        .button2 {background-color: #f44336;} /* Red */ 
+        </style>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h1>Reloader</h1>
+    <table>
+        <tr align="middle">
+            <td>Mins:</td>
+            <td><input id = "reloadTimeMins" type="number" min="1" max="60" step="2" value="1"></td>
+        </tr>
+        <tr align="middle" mode="info"></tr>
+            <td>
+                <button class="button" id="startReload">Start</button>
+            </td>
+            <td>
+                <button class="button button2" id="stopReload">Stop</button>
+            </td>
+        </tr>
+    </table>
+  </body>
+</html>
